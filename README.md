@@ -49,8 +49,3 @@ A aplicación inclúe dúas pestanas principais:
 - **SentenceTransformers** ou o modelo por defecto de ChromaDB
 
 ---
-
-2. Instalar as dependencias:
-
-```bash
-pip install chromadb gradio sentence-transformers
