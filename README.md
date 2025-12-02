@@ -3,7 +3,7 @@
 Este proxecto implementa unha aplicación sinxela baseada en **Gradio** que permite:
 
 - Crear e xestionar unha colección de documentos en memoria utilizando **ChromaDB**.
-- Subir múltiples ficheiros de texto que serán almacenados como documentos na colección.
+- Subir múltiples ficheiros JSON que serán almacenados como documentos na colección.
 - Realizar consultas semánticas sobre o contido destes documentos.
 - Obter o documento máis relevante segundo a semántica da consulta.
 
@@ -16,7 +16,7 @@ A aplicación inicializa unha colección en memoria chamada **`documents`** util
 A colección **non é persistente**, polo que os datos pérdense ao reiniciar a aplicación.
 
 ### 📤 2. Subida de ficheiros
-- O usuario pode subir **múltiples ficheiros de texto (.txt)**.
+- O usuario pode subir **múltiples ficheiros JSON (.json)**.
 - Cada ficheiro súbese como un documento único á colección.
 - Os documentos conteñen:
   - **ID único**
@@ -24,7 +24,7 @@ A colección **non é persistente**, polo que os datos pérdense ao reiniciar a 
   - **Metadatos**, incluíndo polo menos o nome do ficheiro.
 
 ### 🔍 3. Consulta semántica
-- O usuario introduce unha pregunta ou consulta en linguaxe natural.
+- O usuario introduce unha pregunta ou consulta en linguaxe humano.
 - A aplicación fai unha **búsqueda semántica** na colección.
 - Devólvese o documento máis relevante segundo o modelo de embeddings.
 
@@ -49,10 +49,6 @@ A aplicación inclúe dúas pestanas principais:
 - **SentenceTransformers** ou o modelo por defecto de ChromaDB
 
 ---
-
-## 📦 Instalación
-
-1. Clonar o repositorio ou descargar os ficheiros.
 
 2. Instalar as dependencias:
 
