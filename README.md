@@ -38,6 +38,9 @@ A aplicación inclúe dúas pestanas principais:
 2. **Consulta**
    - Entrada de texto para a consulta.
    - Mostra o documento máis relevante e os seus metadatos.
+  
+###  🐳 5. Creación da aplicación dockerizada
+Dockerizouse a aplicación para que poida executarse facilmente dentro dun contedor Docker.
 
 ---
 
